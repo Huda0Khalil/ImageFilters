@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/master.css">
+    <title>Filters</title>
+</head>
+<body>
+    <div class="container">
+        <div class="image-box">
+            <div class="image">
+                <img src="" alt="" srcset="">
+                <canvas id="canvas"></canvas>
+            </div>            
+            <label for="upload">Upload</label>
+            <input type="file" name="Upload" id="upload" hidden>
+        </div>
+
+        <div class="filter-box">
+            <div class="filter">
+                <label for="saturate">Saturate</label>
+                <input type="range" name="saturate" id="saturate" min="0" max="200">
+            </div>
+            <div class="filter">
+                <label for="contrast">Contrast</label>
+                <input type="range" name="contrast" id="contrast" min="0" max="200">
+            </div>
+            <div class="filter">
+                <label for="brigtness">Brightness</label>
+                <input type="range" name="brightness" id="brightness" min="0" max="200">
+            </div>
+            <div class="filter">
+                <label for="sepia">Sepia</label>
+                <input type="range" name="sepia" id="sepia" min="0" max="100" value="0">
+            </div>
+            <div class="filter">
+                <label for="grayscale">Grayscale</label>
+                <input type="range" name="grayscale" id="grayscale" min="0" max="100" value="0">
+            </div>
+            <div class="filter">
+                <label for="blur">Blur</label>
+                <input type="range" name="blur" id="blur" min="0" max="10" value="0">
+            </div>
+            <div class="filter">
+                <label for="hue">Hue Rotate</label>
+                <input type="range" name="hue" id="hue" min="0" max="360" value="0">
+            </div>
+            <div class="reset">Reset</div>
+            <a class="download" download="image-with-filters">Download</a>
+        </div>
+    </div>
+    <script src="master.js"></script>
+</body>
+</html>
